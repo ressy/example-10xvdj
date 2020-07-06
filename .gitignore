@@ -1,4 +1,7 @@
 .snakemake
 sitecheck.txt
-data/
 tiny/
+analysis/
+data/Input/
+data/Output/
+data/Reference/

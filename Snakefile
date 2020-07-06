@@ -6,11 +6,14 @@ from snakemake.remote.HTTP import RemoteProvider as HTTPRemoteProvider
 
 HTTP = HTTPRemoteProvider()
 
-with open("10x.csv") as f_in:
+with open("data/10x.csv") as f_in:
     reader = csv.DictReader(f_in)
     DATA = list(reader)
     URLS = {Path(row["URL"]).name: row["URL"] for row in DATA}
     FILES = [str(Path("data") / row["Group"] / Path(row["URL"]).name) for row in DATA]
+
+rule all:
+    input: "analysis/vdj_v1_hs_pbmc3_b_26x91/vdj_v1_hs_pbmc3_b_26x91.mri.tgz"
 
 rule get_data_all:
     input: FILES
@@ -33,14 +36,23 @@ rule reference:
     shell: "tar xzf {input} -C data/Reference"
 
 rule cr_vdj:
-    output: "analysis/outs"
+    output: "analysis/vdj_v1_hs_pbmc3_b_26x91/vdj_v1_hs_pbmc3_b_26x91.mri.tgz"
     input:
         fastqdir="analysis/vdj_v1_hs_pbmc3_b_26x91_fastqs",
         reference="data/Reference/refdata-cellranger-vdj-GRCh38-alts-ensembl-3.1.0/reference.json"
     params:
         refdir="data/Reference/refdata-cellranger-vdj-GRCh38-alts-ensembl-3.1.0"
     threads: 20
-    shell: "cellranger vdj --fastqs={input.fastqdir} --localcores={threads} --id=vdj_v1_hs_pbmc3_b_26x91 --reference={params.refdir}"
+    shell:
+        """
+            cd analysis
+            cellranger vdj \
+                --fastqs=../{input.fastqdir} \
+                --localcores={threads} \
+                --id=vdj_v1_hs_pbmc3_b_26x91 \
+                --reference=../{params.refdir} \
+                --description='Human PBMC - Ig enrichment from amplified cDNA (v1.0, 26x91)'
+        """
 
 rule analysis_fastqs:
     output: directory("analysis/vdj_v1_hs_pbmc3_b_26x91_fastqs")
@@ -48,7 +60,7 @@ rule analysis_fastqs:
     shell: "tar xf {input} -C analysis"
 
 rule cr_sitecheck:
-    output: "sitecheck.txt"
+    output: "analysis/sitecheck.txt"
     shell: "cellranger sitecheck > {output}"
 
 rule cr_testrun:

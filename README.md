@@ -10,6 +10,7 @@
 
 ...as well as one GRCh38 reference.
 
-Download Cell Ranger from:
+Download Cell Ranger from
 <https://support.10xgenomics.com/single-cell-vdj/software/downloads/latest?>
-(Can't give a direct link as it includes an access token in the URL)
+(can't give a direct link as it includes an access token in the URL) and put
+the extracted directory in `$PATH`.
