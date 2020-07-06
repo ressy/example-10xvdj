@@ -1,0 +1,52 @@
+File,URL,Group,Size,md5sum
+Gene Expression - FASTQs,http://s3-us-west-2.amazonaws.com/10x.files/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_fastqs.tar,Input,58.37 GB,173ef2d414085aa125ffb9eeb220a735
+Gene Expression - Feature Reference CSV,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_feature_ref.csv,Input,2 KB,6697fe477f127950409bcfc67963d03b
+Gene Expression - Library CSV,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_library.csv,Input,306 bytes,aa77830c55121433b85a0675496b9b54
+VDJ TCR - FASTQs,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_fastqs.tar,Input,5.42 GB,eaa6347f3b01127d3573a2fdec3bdeeb
+VDJ Ig - FASTQs,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_fastqs.tar,Input,904.37 MB,e0d692b249f7970d771bfbbe725e693a
+Gene Expression - Genome-aligned BAM,http://s3-us-west-2.amazonaws.com/10x.files/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_possorted_genome_bam.bam,Output,57.80 GB,b5db8d0347cd56f038fcdd952fd106f5
+Gene Expression - Genome-aligned BAM index,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_possorted_genome_bam.bam.bai,Output,9.50 MB,ccaf78c6cbe647e0d538b09dbabe616d
+Gene Expression - Per-molecule read information,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_molecule_info.h5,Output,466.53 MB,95a1fdbcf90ad9854e2ef16b28c008c6
+Gene Expression - Feature / cell matrix HDF5 (filtered),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_filtered_feature_bc_matrix.h5,Output,18.49 MB,ea26dda316b0a5b9fb17b9b9ea11fcb1
+Gene Expression - Feature / cell matrix (filtered),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_filtered_feature_bc_matrix.tar.gz,Output,38.64 MB,7575e1074fa1705fde49b689faf6fff2
+Gene Expression - Feature / cell matrix HDF5 (raw),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_raw_feature_bc_matrix.h5,Output,41.12 MB,be1ebee65c3e9db8ee112d14c81008c9
+Gene Expression - Feature / cell matrix (raw),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_raw_feature_bc_matrix.tar.gz,Output,70.85 MB,76fa190b8a97035371ef4fe034fda805
+Gene Expression - Clustering analysis,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_analysis.tar.gz,Output,25.28 MB,f61e77513fdab3fc323904f22cc2c782
+Gene Expression - Summary CSV,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_metrics_summary.csv,Output,1 KB,e074368bbac52be96cdc032b1d948009
+Gene Expression - Summary HTML,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_gex_web_summary.html,Output,6.87 MB,57efc5b573f29ece84bcd568adfbc202
+Gene Expression - Loupe Cell Browser file,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_cloupe.cloupe,Output,57.08 MB,c0014bffd7f359a4f0c48fda10b3762c
+VDJ Ig - All contig annotations (BED),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_all_contig_annotations.bed,Output,637 KB,e5fa343bf0d1d3b701bb1a9c44536924
+VDJ Ig - All contig annotations (CSV),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_all_contig_annotations.csv,Output,595 KB,a2766b22d6c3e3cf3d7dca7de0528ec1
+VDJ Ig - Read-contig alignments (BAM),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_all_contig.bam,Output,291.16 MB,3c957e8d9f6de357480b0e6d32f2028b
+VDJ Ig - Read-contig alignment index (BAI),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_all_contig.bam.bai,Output,260 KB,97557aebf43d8afb9f001a1eff5ca4a6
+VDJ Ig - All-contig FASTA,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_all_contig.fasta,Output,1.91 MB,de06376d510656c69f56ef495428bbdb
+VDJ Ig - All-contig FASTA index (FAI),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_all_contig.fasta.fai,Output,154 KB,3cd6b793aacde8a2634745e26d942805
+VDJ Ig - All-contig FASTQ,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_all_contig.fastq,Output,3.73 MB,dcd7776301b84e85f17004183fd5acf0
+VDJ Ig - Clonotype info (CSV),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_clonotypes.csv,Output,131 KB,1e79d31f5f164c9b6d5c1d2caddf5ee2
+VDJ Ig - Clonotype consensus annotations (CSV),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_consensus_annotations.csv,Output,233 KB,01cb8cf0a148c6ba301425cd8b79f85f
+VDJ Ig - Clonotype consensus FASTA,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_consensus.fasta,Output,954 KB,1bf7b690058cf795e81c409019f43122
+VDJ Ig - Clonotype consensus FASTQ,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_consensus.fastq,Output,1.83 MB,a1432e742bb365606cf3a871958ee0f7
+VDJ Ig - Filtered contig annotations (CSV),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_filtered_contig_annotations.csv,Output,388 KB,d683facb9e2596b6275288d7d530fc2b
+VDJ Ig - Filtered contig sequences FASTA,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_filtered_contig.fasta,Output,1.21 MB,b33a885f796821c4d68e7cc18113875e
+VDJ Ig - Filtered contig sequences FASTQ,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_filtered_contig.fastq,Output,2.37 MB,143ebdd64a044d55da0f88e5b9b9aa7e
+VDJ Ig - Summary CSV,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_metrics_summary.csv,Output,1 KB,75577789789fa2c8577e8b998f0d7bc7
+VDJ Ig - Summary HTML,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_vdj_web_summary.html,Output,2.07 MB,8941c636cce291f5feb62d76e93b2522
+VDJ Ig - Loupe V(D)J Browser file,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_b_vloupe.vloupe,Output,4.76 MB,d6047d7f1ed6fe290f0205e0e5b9bb82
+VDJ TCR - All contig annotations (BED),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_all_contig_annotations.bed,Output,2.20 MB,5050b931b585c309f9846020a6d40df8
+VDJ TCR - All contig annotations (CSV),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_all_contig_annotations.csv,Output,2.22 MB,af2db6170e1f1bfb9bd961bc7401b032
+VDJ TCR - Read-contig alignments (BAM),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_all_contig.bam,Output,2.23 GB,485e78aa191a442eb938a8223520da1c
+VDJ TCR - Read-contig alignment index (BAI),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_all_contig.bam.bai,Output,965 KB,ce79fe591bd675b4cd40791319194786
+VDJ TCR - All-contig FASTA,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_all_contig.fasta,Output,6.31 MB,93c44df6d566a393586faf2207793f3e
+VDJ TCR - All-contig FASTA index (FAI),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_all_contig.fasta.fai,Output,577 KB,ff05f254ce2ea3693e15fb95e2e1dd1e
+VDJ TCR - All-contig FASTQ,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_all_contig.fastq,Output,12.31 MB,e3bb7e5ea384ea690ac4db9cc09924bb
+VDJ TCR - Clonotype info (CSV),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_clonotypes.csv,Output,610 KB,10300f0e7c1e6d33f2e43f72bbeaffb3
+VDJ TCR - Clonotype consensus annotations (CSV),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_consensus_annotations.csv,Output,1.06 MB,b108bee9fed4cfad676a866f90ad55cd
+VDJ TCR - Clonotype consensus FASTA,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_consensus.fasta,Output,3.92 MB,56f385f26fd9eb4b9ef5d858c46c4b27
+VDJ TCR - Clonotype consensus FASTQ,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_consensus.fastq,Output,7.66 MB,8c83d0e81767af9250e91cca9fefe19d
+VDJ TCR - Filtered contig annotations (CSV),http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_filtered_contig_annotations.csv,Output,1.87 MB,8b58cc6e47f2325c05782c71078ca195
+VDJ TCR - Filtered contig sequences FASTA,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_filtered_contig.fasta,Output,5.21 MB,f6eae60857ce349bdeaf68d0bd9b604b
+VDJ TCR - Filtered contig sequences FASTQ,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_filtered_contig.fastq,Output,10.17 MB,6724bd184a968368fab9b84b0ead7690
+VDJ TCR - Summary CSV,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_metrics_summary.csv,Output,952 bytes,f98d63d131c51480e865d2e2ef993563
+VDJ TCR - Summary HTML,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_vdj_web_summary.html,Output,2.07 MB,9fb3eebf3e7f48f49cdb58caa5923367
+VDJ TCR - Loupe V(D)J Browser file,http://cf.10xgenomics.com/samples/cell-vdj/3.1.0/vdj_v1_hs_pbmc3/vdj_v1_hs_pbmc3_t_vloupe.vloupe,Output,20.84 MB,dbb2050f0fd5b7775cb6e09c6e40f861
+GRCh38 Reference - 3.1.0,http://cf.10xgenomics.com/supp/cell-vdj/refdata-cellranger-vdj-GRCh38-alts-ensembl-3.1.0.tar.gz,Reference,3.3 MB,c1eaf13015b156a5e423c11aefde34d7

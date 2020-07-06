@@ -1,0 +1,8 @@
+name: example-10xvdj
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python
+  - snakemake
