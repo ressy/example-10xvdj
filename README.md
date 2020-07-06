@@ -1,6 +1,6 @@
 # 10X Example
 
-**Work in Progress**
+**(Work in Progress)**
 
 [10x.csv](10x.csv) links to the files listed here:
 <https://support.10xgenomics.com/single-cell-vdj/datasets/3.1.0/vdj_v1_hs_pbmc3>
