@@ -1,6 +1,4 @@
 .snakemake
-sitecheck.txt
-tiny/
 analysis/
 data/Input/
 data/Output/
