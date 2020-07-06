@@ -1,4 +1,4 @@
-# 10X Example
+# 10x Example - VDJ Analysis
 
 **(Work in Progress)**
 
