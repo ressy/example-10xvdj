@@ -15,26 +15,6 @@ with open("data/10x.csv") as f_in:
 rule all:
     input: "analysis/vdj_v1_hs_pbmc3_b_26x91/vdj_v1_hs_pbmc3_b_26x91.mri.tgz"
 
-rule get_data_all:
-    input: FILES
-
-rule get_file:
-    output: "data/{group}/{file}"
-    input: lambda w: HTTP.remote(URLS[w.file], keep_local=True)
-    params: url=lambda w: URLS[w.file]
-    run:
-        md5_exp = [row for row in DATA if row["URL"] == params.url][0]["md5sum"]
-        md5_obs = md5(input[0])
-        if not md5_obs == md5_exp:
-            raise UserWarning(
-                "MD5 mismatch on %s: expected %s, received %s" % (fname, md5_exp, md5_obs))
-        shell("mv {input} {output}")
-
-rule reference:
-    output: "data/Reference/{name}/reference.json"
-    input: "data/Reference/{name}.tar.gz"
-    shell: "tar xzf {input} -C data/Reference"
-
 rule cr_vdj:
     output: "analysis/vdj_v1_hs_pbmc3_b_26x91/vdj_v1_hs_pbmc3_b_26x91.mri.tgz"
     input:
@@ -64,8 +44,32 @@ rule cr_sitecheck:
     shell: "cellranger sitecheck > {output}"
 
 rule cr_testrun:
-    output: "tiny/tiny.mri.tgz"
-    shell: "cellranger testrun --id=tiny"
+    output: "analysis/tiny/tiny.mri.tgz"
+    shell:
+        """
+            cd analysis
+            cellranger testrun --id=tiny
+        """
+
+rule get_data_all:
+    input: FILES
+
+rule get_file:
+    output: "data/{group}/{file}"
+    input: lambda w: HTTP.remote(URLS[w.file], keep_local=True)
+    params: url=lambda w: URLS[w.file]
+    run:
+        md5_exp = [row for row in DATA if row["URL"] == params.url][0]["md5sum"]
+        md5_obs = md5(input[0])
+        if not md5_obs == md5_exp:
+            raise UserWarning(
+                "MD5 mismatch on %s: expected %s, received %s" % (fname, md5_exp, md5_obs))
+        shell("mv {input} {output}")
+
+rule reference:
+    output: "data/Reference/{name}/reference.json"
+    input: "data/Reference/{name}.tar.gz"
+    shell: "tar xzf {input} -C data/Reference"
 
 # https://stackoverflow.com/a/3431838
 def md5(fname):
