@@ -230,11 +230,13 @@ cells in this lineage.
     clonotype_id frequency proportion       cdr3s_aa         cdr3s_nt                                 
     clonotype1   7         0.00906735751295 IGK:CQQYDNWPPYTF IGK:TGTCAGCAGTATGATAACTGGCCTCCGTACACTTTT
 
-clonotype6, for another example, shows CDR3 amino acids `IGH:CARPGTTGTTGLKNW;IGK:CQQYNNWPLTF`.
+clonotype6, for another example, shows information for both IGH and IGK.
+
+    clonotype_id frequency proportion       cdr3s_aa                            cdr3s_nt                                                                                
+    clonotype6   2         0.00259067357513 IGH:CARPGTTGTTGLKNW;IGK:CQQYNNWPLTF IGH:TGTGCGAGACCCGGTACAACTGGAACGACGGGTTTAAAAAACTGG;IGK:TGTCAGCAGTATAATAACTGGCCTCTCACCTTC
 
 There are 760 clonotype entries total, and summing the frequency column gives the 772
 cells reported in `web_summary.html`.
-
 
 See also:
 
