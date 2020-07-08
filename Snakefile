@@ -31,7 +31,8 @@ rule cr_vdj:
                 --localcores={threads} \
                 --id=vdj_v1_hs_pbmc3_b_26x91 \
                 --reference=../{params.refdir} \
-                --description='Human PBMC - Ig enrichment from amplified cDNA (v1.0, 26x91)'
+                --description='Human PBMC - Ig enrichment from amplified cDNA (v1.0, 26x91)' \
+                --disable-ui
         """
 
 rule analysis_fastqs:
